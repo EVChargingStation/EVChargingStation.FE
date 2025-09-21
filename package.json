@@ -8,13 +8,13 @@
   ],
   "scripts": {
     "dev": "turbo run dev",
-    "dev:web": "pnpm --filter @evchargingstation/web dev",
-    "dev:mobile": "pnpm --filter @evchargingstation/mobile dev",
-    "dev:desktop": "pnpm --filter @evchargingstation/desktop dev",
+    "dev:web": "npm run dev --workspace=@evchargingstation/web",
+    "dev:mobile": "npm run dev --workspace=@evchargingstation/mobile",
+    "dev:desktop": "npm run dev --workspace=@evchargingstation/desktop",
     "build": "turbo run build",
-    "build:web": "pnpm --filter @evchargingstation/web build",
-    "build:mobile": "pnpm --filter @evchargingstation/mobile build",
-    "build:desktop": "pnpm --filter @evchargingstation/desktop build",
+    "build:web": "npm run build --workspace=@evchargingstation/web",
+    "build:mobile": "npm run build --workspace=@evchargingstation/mobile",
+    "build:desktop": "npm run build --workspace=@evchargingstation/desktop",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "clean": "turbo run clean",
@@ -24,6 +24,5 @@
     "turbo": "^1.10.12",
     "typescript": "^5.0.0",
     "@types/node": "^20.0.0"
-  },
-  "packageManager": "pnpm@8.0.0"
+  }
 }

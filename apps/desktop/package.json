@@ -14,8 +14,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@evchargingstation/shared": "workspace:*",
-    "@evchargingstation/ui": "workspace:*",
+    "@evchargingstation/shared": "*",
+    "@evchargingstation/ui": "*",
     "electron": "^25.0.0"
   },
   "devDependencies": {

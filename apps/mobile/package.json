@@ -12,8 +12,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@evchargingstation/shared": "workspace:*",
-    "@evchargingstation/ui": "workspace:*",
+    "@evchargingstation/shared": "*",
+    "@evchargingstation/ui": "*",
     "expo": "~49.0.0",
     "react": "18.2.0",
     "react-native": "0.72.0"
