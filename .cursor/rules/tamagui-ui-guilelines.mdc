@@ -1,0 +1,15 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+- Use Tamagui components for universal UI patterns
+- Implement responsive design with Tamagui's responsive props
+- Use Tamagui's theme system for consistent styling
+- Implement dark mode support using Tamagui's theme switching
+- Use Tamagui's built-in accessibility props
+- Leverage Tamagui's animations for performant animations
+- Use Tamagui's styled components for custom styling
+- Prefer Tamagui's design tokens over hardcoded values
+- Create platform-specific components only when necessary
+- Use Tamagui's safe area utilities for proper spacing

@@ -1,0 +1,11 @@
+---
+description: Sets general preferences for TypeScript React development, such as preferring functional components.
+globs: **/*.tsx
+alwaysApply: true
+---
+- Prefer functional components
+- Use Redux Toolkit for state management
+- Use Tamagui for UI components
+- Use platform-specific implementations only when necessary
+- Prefer shared packages over platform-specific code
+- Use TypeScript strict mode across all platforms

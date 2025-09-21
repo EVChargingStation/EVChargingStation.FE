@@ -1,0 +1,45 @@
+---
+description: Defines the preferred folder structure for multi-platform monorepo projects.
+globs: **/*
+---
+- Recommended monorepo folder structure:
+  apps/
+    web/                    # React Native Web app
+      src/
+        components/
+        pages/
+        hooks/
+        store/              # Redux store
+        types/
+        utils/
+    mobile/                 # React Native + Expo app
+      src/
+        components/
+        screens/
+        navigation/
+        store/              # Redux store
+        types/
+        utils/
+    desktop/                # Electron app
+      src/
+        main/               # Electron main process
+        renderer/           # Electron renderer
+          components/
+          pages/
+          store/            # Redux store
+          types/
+          utils/
+  packages/
+    shared/                 # Shared code
+      src/
+        components/
+        hooks/
+        store/              # Shared Redux store
+        api/
+        types/
+        utils/
+    ui/                     # Shared UI components
+      src/
+        components/
+        styles/
+  tools/                    # Build tools

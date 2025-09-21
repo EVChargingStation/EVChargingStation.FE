@@ -1,0 +1,13 @@
+---
+description: Multi-platform development considerations for web, mobile, and desktop.
+globs: **/*
+alwaysApply: true
+---
+- Create shared packages for common functionality
+- Use platform-specific packages for platform-specific code
+- Use appropriate navigation libraries for each platform
+- Implement platform-specific error handling
+- Use platform-specific secure storage solutions
+- Follow platform-specific deployment guidelines
+- Ensure accessibility across all platforms
+- Use platform-specific testing tools

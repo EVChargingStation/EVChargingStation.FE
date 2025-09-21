@@ -1,0 +1,227 @@
+# Dependencies
+node_modules
+.pnpm-store/
+package-lock.json
+yarn.lock
+
+# pnpm specific
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+/dist
+/build
+/out
+
+# Platform-specific build outputs
+# Web (React Native Web)
+apps/web/dist/
+apps/web/build/
+
+# Mobile (Expo/React Native)
+apps/mobile/.expo/
+apps/mobile/dist/
+apps/mobile/build/
+apps/mobile/android/
+apps/mobile/ios/
+apps/mobile/web-build/
+
+# Desktop (Electron)
+apps/desktop/dist/
+apps/desktop/build/
+apps/desktop/release/
+apps/desktop/out/
+
+# Packages build outputs
+packages/*/dist/
+packages/*/build/
+
+# Testing
+/coverage
+*.lcov
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache and temp folders
+.cache/
+.temp/
+.tmp/
+.eslintcache
+*.tsbuildinfo
+
+# TypeScript
+*.tsbuildinfo
+
+# React Native specific
+# Metro
+.metro-health-check*
+.metro-cache/
+
+# React Native CLI
+android/
+ios/
+
+# Expo
+.expo/
+.expo-shared/
+expo-env.d.ts
+
+# EAS
+eas.json
+
+# Flipper
+ios/Pods/
+android/app/build/
+
+# CocoaPods
+ios/Pods/
+ios/Podfile.lock
+
+# Gradle
+android/.gradle/
+android/app/build/
+android/build/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+
+# Xcode
+ios/build/
+ios/*.xcworkspace
+ios/*.xcuserdata
+ios/Pods/
+ios/Podfile.lock
+
+# Android
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/gradle/
+android/gradlew
+android/gradlew.bat
+
+# Electron specific
+apps/desktop/dist/
+apps/desktop/build/
+apps/desktop/release/
+apps/desktop/out/
+apps/desktop/app/
+
+# Electron Builder
+apps/desktop/dist_electron/
+apps/desktop/release/
+
+# Monorepo specific
+# Turborepo
+.turbo/
+
+# pnpm
+pnpm-lock.yaml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Coverage directory
+coverage/
+*.lcov
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env
+.env.test
+.env.production
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Platform-specific development files
+# Web
+apps/web/.vite/
+apps/web/public/sw.js
+
+# Mobile
+apps/mobile/.expo/
+apps/mobile/expo-env.d.ts
+apps/mobile/ios/
+apps/mobile/android/
+apps/mobile/web-build/
+apps/mobile/.expo-shared/
+
+# Desktop
+apps/desktop/dist/
+apps/desktop/build/
+apps/desktop/release/
+apps/desktop/out/
+apps/desktop/app/
+
+# Shared packages
+packages/*/dist/
+packages/*/build/
+
+# Tools
+tools/*/dist/
+tools/*/build/
+
+# Testing
+**/coverage/
+**/.nyc_output/
+
+# Linting
+**/.eslintcache
+
+# TypeScript
+**/*.tsbuildinfo
+
+# Vite
+**/.vite/
+
+# Turbo
+.turbo/
