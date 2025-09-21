@@ -1,0 +1,28 @@
+{
+  "name": "@evchargingstation/desktop",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:renderer\" \"wait-on http://localhost:3000 && electron .\"",
+    "dev:renderer": "cd ../web && npm run dev",
+    "build": "npm run build:renderer && npm run build:main",
+    "build:renderer": "cd ../web && npm run build",
+    "build:main": "tsc",
+    "dist": "npm run build && electron-builder",
+    "lint": "eslint src --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@evchargingstation/shared": "workspace:*",
+    "@evchargingstation/ui": "workspace:*",
+    "electron": "^25.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.0.0",
+    "electron-builder": "^24.0.0",
+    "typescript": "^5.0.0",
+    "wait-on": "^7.0.0"
+  }
+}

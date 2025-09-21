@@ -1,0 +1,20 @@
+{
+  "appId": "com.evchargingstation.desktop",
+  "productName": "EV Charging Station",
+  "directories": {
+    "output": "dist-electron"
+  },
+  "files": [
+    "dist/**/*",
+    "../web/dist/**/*"
+  ],
+  "mac": {
+    "category": "public.app-category.utilities"
+  },
+  "win": {
+    "target": "nsis"
+  },
+  "linux": {
+    "target": "AppImage"
+  }
+}
