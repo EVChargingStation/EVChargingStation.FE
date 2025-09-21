@@ -1,11 +1,17 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, AppRegistry } from 'react-native';
 
-export default function App() {
+function App() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>EV Charging Station - Mobile App</Text>
-      <Text>Mobile app implementation will be added here</Text>
+      <Text>Nigga nigga nigga </Text>
+      <Text>Nigga nigga nigga </Text>
+      <Text>Nigga nigga nigga </Text>
     </View>
   );
 }
+
+AppRegistry.registerComponent('main', () => App);
+
+export default App;
