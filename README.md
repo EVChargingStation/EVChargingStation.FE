@@ -1,49 +1,109 @@
-# EV Charging Station FE
+# EV Charging Station - Frontend
 
-React + Vite + TypeScript + TailwindCSS + Redux Toolkit (pnpm)
+The frontend application for the EV Charging Station management system. Built with React, TypeScript, and Vite, following a minimalist design approach for the MVP.
+
+This project is the user-facing interface for both EV drivers and system administrators, designed to be simple, functional, and easy to use.
 
 ## Tech Stack
-- React 18, TypeScript, Vite
-- TailwindCSS
-- Redux Toolkit + React Redux
-- pnpm
+- **Framework**: [React 18](https://react.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
 
-## Getting Started
-```bash
-pnpm install
-pnpm dev
-```
-Open http://localhost:5173
+## Quick Start
 
-## Build & Preview
-```bash
-pnpm build
-pnpm preview
-```
-Preview at http://localhost:4173
+1.  **Clone the repository:**
+    ```bash
+    git clone <your-repo-url>
+    cd EVChargingStation.FE
+    ```
 
-## Project Structure
+2.  **Install dependencies (using pnpm):**
+    ```bash
+    pnpm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    pnpm run dev
+    ```
+
+The application will be available at `http://localhost:5173`.
+
+## MVP Scope & Design Philosophy
+This project is an MVP (Minimum Viable Product) with a focus on core functionality and a minimalist design.
+
+-   **Design Philosophy**: Clean, uncluttered, and functional UI with a simple color palette and ample whitespace.
+-   **User Roles**: The application supports two main roles: **EV Driver** and **Admin**.
+-   **Key Principle**: Functionality over complex aesthetics. Features are simplified for rapid development (e.g., list views instead of maps, simulated payments).
+
+---
+
+## Application Pages (MVP)
+
+Here is a breakdown of the pages required to build the MVP.
+
+### 1. Authentication Pages (for all users)
+-   **`/login`**: User login page.
+-   **`/register`**: New user registration page.
+-   **`/forgot-password`**: Password recovery page (optional for initial MVP).
+
+### 2. EV Driver Pages (Core User Features)
+-   **`/dashboard`**: Main dashboard after login, showing quick stats or recent activity.
+-   **`/stations`**: A list view of all available charging stations.
+-   **`/stations/:id`**: Detailed view of a specific station, including connector types and status.
+-   **`/profile`**: User profile management (personal info, vehicle details).
+-   **`/charging/session`**: A page to monitor an active charging session.
+-   **`/charging/history`**: A list of all past charging sessions.
+-   **`/payments`**: Transaction history and simplified electronic receipts.
+
+### 3. Admin Pages (Management Features)
+-   **`/admin/dashboard`**: Admin-specific dashboard with overview statistics.
+-   **`/admin/stations`**: CRUD interface for managing stations and their charging points.
+-   **`/admin/users`**: CRUD interface for managing users.
+-   **`/admin/reports/revenue`**: Simple report showing revenue by station.
+-   **`/admin/reports/usage`**: Simple report showing station usage frequency.
+
+### 4. Common Pages
+-   **`/`**: Landing page or redirects to login/dashboard.
+-   **`/404`**: Not Found page.
+-   **`/unauthorized`**: Access Denied page.
+
+---
+
+## Proposed Directory Structure
+
+To keep the project organized, pages will be structured by role:
+
 ```
 src/
-  App.tsx
-  main.tsx
-  index.css
-  store/
-    store.ts
-    hooks.ts
-    slices/
-      counterSlice.ts
+└── pages/
+    ├── auth/
+    │   ├── LoginPage.tsx
+    │   └── RegisterPage.tsx
+    ├── driver/
+    │   ├── DriverDashboardPage.tsx
+    │   ├── StationsPage.tsx
+    │   ├── StationDetailPage.tsx
+    │   ├── ProfilePage.tsx
+    │   ├── ChargingSessionPage.tsx
+    │   └── PaymentsPage.tsx
+    ├── admin/
+    │   ├── AdminDashboardPage.tsx
+    │   ├── StationManagementPage.tsx
+    │   ├── UserManagementPage.tsx
+    │   └── ReportsPage.tsx
+    └── common/
+        ├── HomePage.tsx
+        ├── NotFoundPage.tsx
+        └── UnauthorizedPage.tsx
 ```
 
-## Tailwind
-- Config: `tailwind.config.js`
-- PostCSS: `postcss.config.cjs`
-- Directives in `src/index.css`
+## MVP Development Plan
 
-## Scripts
-- dev: start Vite dev server
-- build: type-check then build
-- preview: preview production build
+The development is planned in three phases:
 
-## Troubleshooting
-- Module not found './App': ensure `src/App.tsx` exists and has `export default App;`. If your editor still errors, try restarting its TypeScript server and use `import App from './App.tsx';`.
+-   **Phase 1 (Weeks 1-2)**: Foundation, Authentication, and basic station views.
+-   **Phase 2 (Weeks 3-4)**: Core charging logic and Admin station management.
+-   **Phase 3 (Weeks 5-6)**: Payment history, user management, and basic reporting.
