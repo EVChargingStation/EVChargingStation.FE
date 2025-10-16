@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageLayout from '../../components/layout/PageLayout';
 import Button from '../../components/ui/Button';
+import logo from '../../assets/images/logo.png';
 
 const HomePage: React.FC = () => {
   return (
@@ -28,9 +29,7 @@ const HomePage: React.FC = () => {
           </div>
           <div className="flex justify-center">
             <div className="relative">
-              <svg className="w-full h-auto max-w-lg text-blue-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18.375 23.25h-1.5c-.619 0-1.125-.506-1.125-1.125v-1.5c0-.619.506-1.125 1.125-1.125h1.5c.619 0 1.125.506 1.125 1.125v1.5c0 .619-.506 1.125-1.125 1.125zM18.75 18v-4.875c0-.619-.506-1.125-1.125-1.125h-1.5c-.619 0-1.125.506-1.125 1.125V18m-9-6v10.125c0 .619.506 1.125 1.125 1.125h1.5c.619 0 1.125-.506 1.125-1.125V12m-3 7.125h4.5M13.5 12V8.25m0 0V6.375c0-.621-.504-1.125-1.125-1.125h-1.5c-.621 0-1.125.504-1.125 1.125v1.875m3.75 0a1.875 1.875 0 01-1.875 1.875h0a1.875 1.875 0 01-1.875-1.875v0C10.875 7.264 11.639 6.5 12.625 6.5h0c.986 0 1.75.764 1.75 1.75v0z" fill="currentColor" />
-              </svg>
+              <img src={logo} alt="EV Charging Station Logo" className="w-full h-auto max-w-lg" />
               <div className="absolute inset-0 bg-blue-100 rounded-full filter blur-3xl opacity-30 -z-10"></div>
             </div>
           </div>
